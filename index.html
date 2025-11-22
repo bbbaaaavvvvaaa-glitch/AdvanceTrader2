@@ -3,22 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advance Trader 2</title>
+    <title>Advance Tradar 2</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <div class="app-container">
-        <h1>Advance Trader 2</h1>
-        <div class="signals">
-            <p id="signal-text">Signals will appear here</p>
+    <div class="container">
+        <h1>Advance Tradar 2</h1>
+
+        <!-- Signal Display -->
+        <div id="signal-text">Signals will appear here</div>
+
+        <!-- Smart Money Info -->
+        <div id="smart-money-info">
+            <p>Trend (4H): <span id="trend-4h">---</span></p>
+            <p>Trend (1H): <span id="trend-1h">---</span></p>
+            <p>HH / HL / LH / LL: <span id="structure">---</span></p>
+            <p>Strong Liquidity Zone: <span id="liquidity">---</span></p>
+            <p>Reversal / Continuation: <span id="reversal">---</span></p>
         </div>
+
+        <!-- Buttons -->
         <div class="buttons">
             <button onclick="buySignal()">Buy</button>
             <button onclick="sellSignal()">Sell</button>
             <button onclick="exitSignal()">Exit</button>
         </div>
     </div>
+
     <script src="app.js"></script>
 </body>
 </html>
